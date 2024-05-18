@@ -329,7 +329,7 @@ h4 {
 .mobile_slider {
 	width: 100%;
 	padding: 30px;
-  	display: none;
+  	display: ;
 }
 
 /***************/
@@ -352,7 +352,7 @@ h4 {
 
 @media screen and (max-width: 950px) {
   .body{
-    display: none;
+    display: ;
   }
   .mobile_slider{
     display: block;
