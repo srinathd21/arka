@@ -328,9 +328,8 @@ h4 {
 /* Mobile slider */
 .mobile_slider {
 	width: 100%;
-	height: 100%;
 	padding: 30px;
-  display: none;
+  	display: none;
 }
 
 /***************/
@@ -343,7 +342,7 @@ h4 {
 
 
 .slick-slide img {
-	max-width: 100%;
+	width: 100%;
 	transition: all 0.4s ease-in-out;
 }
 
