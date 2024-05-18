@@ -8,11 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arka</title>
 
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -26,6 +22,9 @@
 
     <!--  Font Awesome  -->
     <script src="https://kit.fontawesome.com/8b7cdef8f0.js" crossorigin="anonymous"></script>
+
+    <!-- _____ Slick Slider _____ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -138,7 +137,7 @@
 
                 <div class="sec_carousel_overlay">
                     <h1>Unlock your potential with <br>Arka</h1>
-                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Quibusdam, quo?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Quibusdam, quo?</p>
                     <form action="/submit" method="post">
                         <a class="navbar-brand1"
                             href="file:///C:/Users/dines/OneDrive/Desktop/Registor_form/Registor_form/index.html">Register
@@ -196,22 +195,28 @@
         </div>
 
         <!-- Mobile screen slider  -->
-        <div class="mobile_slider" style="overflow: hidden;">
-            <div class="slider">
-                <div class="item">
-                    <img src="img/Card1.jpg" alt="" />
+        <div class="slider">
+            <div class="mx-3">
+                <div class="card border-0 rounded-0">
+                    <img src="img/Card1.jpg" alt="">
                 </div>
+            </div>
 
-                <div class="item">
-                    <img src="img/Card2.jpg" alt="" />
+            <div class="mx-3">
+                <div class="card border-0 rounded-0">
+                    <img src="img/Card2.jpg" alt="">
                 </div>
+            </div>
 
-                <div class="item">
-                    <img src="img/Card3.jpg" alt="" />
+            <div class="mx-3">
+                <div class="card border-0 rounded-0">
+                    <img src="img/Card3.jpg" alt="">
                 </div>
+            </div>
 
-                <div class="item">
-                    <img src="img/Card1.jpg" alt="" />
+            <div class="mx-3">
+                <div class="card border-0 rounded-0">
+                    <img src="img/Card2.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -223,18 +228,18 @@
 
 <!--  Carousel js  -->
 <script>
-    
+
     function updateImageSource() {
         const imgElement_1 = document.getElementById('carousel_img_1');
         const imgElement_2 = document.getElementById('carousel_img_2');
         const viewportWidth = window.innerWidth;
-        
+
         if (viewportWidth <= 1200) {
-            imgElement_1.src = 'img/Arka Drops copy_mob.jpg'; 
-            imgElement_2.src = 'img/Arka Drops copy 2_mob.jpg'; 
+            imgElement_1.src = 'img/Arka Drops copy_mob.jpg';
+            imgElement_2.src = 'img/Arka Drops copy 2_mob.jpg';
         } else {
-            imgElement_1.src = 'img/Arka Drops copy.jpg'; 
-            imgElement_2.src = 'img/Arka Drops copy 2.jpg'; 
+            imgElement_1.src = 'img/Arka Drops copy.jpg';
+            imgElement_2.src = 'img/Arka Drops copy 2.jpg';
         }
     }
 
@@ -245,47 +250,36 @@
 <!-- Swiper JS -->
 <script src="js/swiper-bundle.min.js"></script>
 
-<!--  Mobile Slider  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $(".slider").slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            speed: 500,
-            autoplaySpeed: 5000,
-            infinite: true,
-            autoplay: true,
-            centerMode: true,
-            centerPadding: "0",
-            responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-        });
-    });
-</script>
 
 <!-- JavaScript -->
 <script src="js/script.js"></script>
+
+<!--  Mobile Slider  -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script>
+
+    $('.slider').slick({
+      centerMode: true,
+      dots: true,
+      autoplay: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          Infinity: true,
+          slidesToShow: 1
+        },
+      }]
+    });
+
+  </script>
+</script>
+
 
 
 
