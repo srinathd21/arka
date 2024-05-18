@@ -329,7 +329,7 @@ h4 {
 .mobile_slider {
 	width: 100%;
 	padding: 30px;
-  	display: ;
+  	display: none;
 }
 
 /***************/
@@ -355,6 +355,6 @@ h4 {
     display: ;
   }
   .mobile_slider{
-    display: block;
+    display: ;
   }
 }
