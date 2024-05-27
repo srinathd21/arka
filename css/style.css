@@ -419,3 +419,13 @@ h4 {
     display: block;
   }
 }
+
+.slide_card_content{
+  padding: 50px;
+}
+.slide_card_content div{
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
