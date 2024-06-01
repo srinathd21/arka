@@ -484,10 +484,8 @@ h4 {
   text-decoration: none;
 }
 #footer {
-left: 0;
 bottom: 0;
-width: 100%;
-background-color: red;
+
 color: white;
 text-align: center;
 margin-top: 200px;
@@ -495,4 +493,17 @@ margin-top: 200px;
 
 #social_media a{
   color: gray;
+}
+#demo_m{
+  display: none;
+}
+
+@media screen and (max-width:1000px) {
+  #demo_l{
+    display: none;
+  }
+  #demo_m{
+    display: block;
+  }
+  
 }
