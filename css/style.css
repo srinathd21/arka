@@ -480,6 +480,19 @@ h4 {
   margin-bottom: 10px;
 }
 
-.slide_card_1_img_content {
-  padding-top: 70px;
+#footer a{
+  text-decoration: none;
+}
+#footer {
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: red;
+color: white;
+text-align: center;
+margin-top: 200px;
+}
+
+#social_media a{
+  color: gray;
 }
