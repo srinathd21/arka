@@ -32,8 +32,8 @@ body {
 
 .navbar_logo img,
 .offcanvas-title img {
-  width: 100px;
-  margin-top: -6px;
+  width: 50px;
+  margin-top: -10px;
 }
 
 @media screen and (max-width: 764px) {
