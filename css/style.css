@@ -64,6 +64,16 @@ body {
   }
 }
 
+@media screen and (max-width: 360px) {
+  .content div {
+    display: none;
+  }
+  .logo{
+  
+    margin: -2px 100px 0px 20vw;
+  }
+}
+
 .cp_button {
   display: none;
   position: fixed;
