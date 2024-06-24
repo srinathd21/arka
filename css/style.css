@@ -28,7 +28,7 @@ body {
 }
 .logo{
   
-  margin: -2px 100px 0px 0px;
+  margin: -2px 0px 0px 0px;
 }
 .navbar_logo{
   margin: 0px 0px 0px 10px;
@@ -53,6 +53,123 @@ body {
   width: 20px;
   
 }
+h4 {
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  left: 100px;
+  top: -1px;
+}
+
+.content a {
+  text-decoration: none;
+
+}
+
+.content_products img {
+  width: 80px;
+  margin: 15px 80px;
+}
+
+.content_products {
+  height: 160px;
+  width: 250px;
+  justify-content: center;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-right: 70px;
+  color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 15px rgb(123, 123, 123);
+  background: linear-gradient(22deg, rgba(108, 234, 186, 1) 0%, rgba(0, 216, 126, 1) 100%);
+}
+
+.cont_img_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cont_img img {
+  border: 1px solid black;
+  border-radius: 100%;
+  height: 300px;
+  width: 300px;
+  margin-top: 50px;
+  margin-right: 100px;
+}
+
+.cmp_content p {
+  background: linear-gradient(22deg, rgba(255, 255, 255, 1) 0%, rgba(44, 201, 110, 1) 100%);
+  padding: 40px;
+  color: white;
+  border-radius: 20px;
+}
+
+.cmp_button {
+  display: none;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  margin: 20px;
+  background-color: rgb(6, 161, 233);
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.dropbtn {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f2f6e8;
+  min-width: 152px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  margin-right: -0.5px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffffff
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.fa-angle-down {
+  transition: 0.3s;
+  color: #000000;
+  font-size: 10px;
+}
+
+.dropdown:hover .fa-angle-down {
+  rotate: 180deg;
+
+}
 
 @media screen and (max-width: 766px) {
   .content div {
@@ -60,7 +177,7 @@ body {
   }
   .logo{
   
-    margin: -2px 100px 0px 25vw;
+    margin: -2px 0px 0px 25vw;
   }
 }
 
@@ -70,7 +187,7 @@ body {
   }
   .logo{
   
-    margin: -2px 100px 0px 20vw;
+    margin: -2px 0px 0px 20vw;
   }
 }
 
@@ -224,120 +341,7 @@ body {
 
 /* Sri */
 
-h4 {
-  font-weight: bold;
-}
 
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.content a {
-  text-decoration: none;
-
-}
-
-.content_products img {
-  width: 80px;
-  margin: 15px 80px;
-}
-
-.content_products {
-  height: 160px;
-  width: 250px;
-  justify-content: center;
-  border-radius: 20px;
-  margin-top: 20px;
-  margin-right: 70px;
-  color: rgb(255, 255, 255);
-  box-shadow: 2px 2px 15px rgb(123, 123, 123);
-  background: linear-gradient(22deg, rgba(108, 234, 186, 1) 0%, rgba(0, 216, 126, 1) 100%);
-}
-
-.cont_img_div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.cont_img img {
-  border: 1px solid black;
-  border-radius: 100%;
-  height: 300px;
-  width: 300px;
-  margin-top: 50px;
-  margin-right: 100px;
-}
-
-.cmp_content p {
-  background: linear-gradient(22deg, rgba(255, 255, 255, 1) 0%, rgba(44, 201, 110, 1) 100%);
-  padding: 40px;
-  color: white;
-  border-radius: 20px;
-}
-
-.cmp_button {
-  display: none;
-  position: fixed;
-  right: 0px;
-  bottom: 0px;
-  margin: 20px;
-  background-color: rgb(6, 161, 233);
-  text-decoration: none;
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.dropbtn {
-  background-color: none;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f2f6e8;
-  min-width: 152px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  margin-right: -0.5px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #ffffff
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.fa-angle-down {
-  transition: 0.3s;
-  color: #000000;
-  font-size: 10px;
-}
-
-.dropdown:hover .fa-angle-down {
-  rotate: 180deg;
-
-}
 
 #carousel_img_1,
 #carousel_img_2 {
